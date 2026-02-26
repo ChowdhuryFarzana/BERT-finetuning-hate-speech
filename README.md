@@ -2,11 +2,11 @@
 
 ## Paper Being Replicated
 
-This implementation is based on the methodology described in:
-
-Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. In Proceedings of NAACL-HLT 2019, 4171-4186.
-
-The core approach follows the fine-tuning paradigm introduced in the original BERT paper, where a pre-trained transformer model is adapted to a downstream classification task by adding a linear classification head on top of the [CLS] token representation and training end-to-end on labeled data.
+This project replicates the methodology from Mozafari, Farahbakhsh, and Crespi (2019),
+"A BERT-Based Transfer Learning Approach for Hate Speech Detection in Online Social Media"
+(arXiv:1910.12574). The paper proposes four fine-tuning strategies on top of a pre-trained
+BERTbase model for classifying hate speech in Twitter data, evaluating across two benchmark
+datasets annotated for racism, sexism, hate, and offensive language.
 
 ### Analysis and Performance Evaluation
 
@@ -92,6 +92,10 @@ results are more uniform across strategies (90.52-91.37%) compared to the paper'
 wider spread (77-92%), suggesting modern training infrastructure reduces the
 sensitivity of results to classifier head complexity.
 
+---
+
 ## Citation
 
-Devlin, J., Chang, M. W., Lee, K., and Toutanova, K. (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. Proceedings of NAACL-HLT 2019, pages 4171-4186. Association for Computational Linguistics.
+Mozafari, M., Farahbakhsh, R., and Crespi, N. (2019). A BERT-Based Transfer Learning
+Approach for Hate Speech Detection in Online Social Media. arXiv:1910.12574.
+https://arxiv.org/abs/1910.12574
